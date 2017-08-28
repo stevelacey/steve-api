@@ -62,7 +62,7 @@ class Image(models.Model):
     caption = models.CharField(max_length=255, blank=True, null=True)
 
     def url(self):
-        return 'http://steve/uploads/image/' + self.path
+        return 'https://images.steve.ly/uploads/image/' + self.path
 
     class Meta:
         db_table = 'image'
